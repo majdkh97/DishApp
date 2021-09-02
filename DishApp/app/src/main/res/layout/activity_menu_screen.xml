@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuScreenActivity">
+
+    <Button
+        android:id="@+id/HomeButton"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#F166F1"
+        android:text="Home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DishListRecyclerView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/DishListRecyclerView"
+        android:layout_width="405dp"
+        android:layout_height="323dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/GoToSecretActivityButton"
+        android:layout_width="392dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="162dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="DontClickMe"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.462"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HomeButton"
+        style="?android:attr/borderlessButtonStyle"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

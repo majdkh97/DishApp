@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DishApp">
+        <activity android:name=".SecretActivity"></activity>
+        <activity android:name=".DishIngredientDetails" />
+        <activity android:name=".MenuScreenActivity" />
+        <activity android:name=".AddDishScreenActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
